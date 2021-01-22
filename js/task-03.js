@@ -27,6 +27,6 @@ const galleryListRef = document.querySelector('#gallery');
 galleryListRef.classList.add('gallery');
 let stringLayout = '';
 images.forEach(image => {
-  stringLayout += `<li><img src= ${image.url} alt= ${image.alt}></li>`;
+  stringLayout += `<li><img src="${image.url}" alt="${image.alt}"></li>`;
 });
 galleryListRef.insertAdjacentHTML('afterbegin', stringLayout);
